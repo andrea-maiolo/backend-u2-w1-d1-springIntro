@@ -6,8 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class U2W1D1SpingIntroApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(U2W1D1SpingIntroApplication.class, args);
-	}
+    public static void main(String[] args) {
+
+        SpringApplication.run(U2W1D1SpingIntroApplication.class, args);
+        System.out.println("test");
+    }
 
 }
