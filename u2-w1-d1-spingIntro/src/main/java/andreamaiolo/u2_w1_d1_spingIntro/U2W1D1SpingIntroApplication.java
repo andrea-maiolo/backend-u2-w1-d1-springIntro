@@ -23,5 +23,6 @@ public class U2W1D1SpingIntroApplication {
 
         Menu myMenu = context.getBean(Menu.class);
         System.out.println(myMenu);
+        context.close();
     }
 }
