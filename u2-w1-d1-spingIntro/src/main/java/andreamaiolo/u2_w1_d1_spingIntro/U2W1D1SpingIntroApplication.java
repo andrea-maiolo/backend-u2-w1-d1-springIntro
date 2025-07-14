@@ -1,5 +1,6 @@
 package andreamaiolo.u2_w1_d1_spingIntro;
 
+import andreamaiolo.u2_w1_d1_spingIntro.entities.Drinks;
 import andreamaiolo.u2_w1_d1_spingIntro.entities.Menu;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,8 +12,8 @@ public class U2W1D1SpingIntroApplication {
     public static void main(String[] args) {
         SpringApplication.run(U2W1D1SpingIntroApplication.class, args);
 
-        //  Drinks coca = new Drinks("coca", 3.45, 132);
-        //  System.out.println(coca);
+        Drinks coca = new Drinks("coca", 3.45, 132);
+        //System.out.println(coca);
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(U2W1D1SpingIntroApplication.class);
 
 //        Toppings ham = context.getBean("getHam", Toppings.class);

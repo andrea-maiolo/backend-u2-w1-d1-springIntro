@@ -29,7 +29,16 @@ public class Pizzas {
                 .map(t -> t.getCalories())
                 .reduce(0, (a, b) -> a + b);
         this.calories = 500 + toppingsCalories;
+
+        //calcolo prezzo totale
+        getTotalPrice();
     }
 
+    public void getTotalPrice() {
+        double toppingsPrice = listOfToppings.stream()
+                .map(t -> t.getPrice())
+                .reduce(0.0, (a, b) -> a + b);
+        this.price = 5 + toppingsPrice;
+    }
 
 }

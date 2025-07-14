@@ -18,7 +18,4 @@ public class Toppings {
         this.price = price;
     }
 
-    public int getCalories() {
-        return calories;
-    }
 }

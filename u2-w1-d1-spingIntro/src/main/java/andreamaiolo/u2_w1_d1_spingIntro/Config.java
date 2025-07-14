@@ -65,7 +65,7 @@ public class Config {
 
     @Bean
     public Pizzas getHamMushrooms() {
-        Pizzas base = new Pizzas("prosciutto e funghi", 7.00, 500);
+        Pizzas base = new Pizzas("prosciutto e funghi", 5.00, 500);
         base.addTopping(getMozzarella());
         base.addTopping(getTomato());
         base.addTopping(getHam());
@@ -75,7 +75,7 @@ public class Config {
 
     @Bean
     public Pizzas getSiciliana() {
-        Pizzas base = new Pizzas("siciliana", 8.00, 500);
+        Pizzas base = new Pizzas("siciliana", 5.00, 500);
         base.addTopping(getMozzarella());
         base.addTopping(getTomato());
         base.addTopping(getAnchovies());
