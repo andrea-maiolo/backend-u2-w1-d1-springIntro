@@ -1,5 +1,7 @@
 package andreamaiolo.u2_w1_d1_spingIntro.entities;
 
+import lombok.NoArgsConstructor;
+
 import java.util.ArrayList;
 import java.util.List;
 
