@@ -56,11 +56,6 @@ public class Config {
     }
 
     @Bean
-    public Toppings getAnanas() {
-        return new Toppings("ananas", 200.00, 200);
-    }
-
-    @Bean
     public Pizzas getMargherita() {
         Pizzas base = new Pizzas("margherita", 5.00, 500);
         base.addTopping(getMozzarella());
@@ -70,7 +65,7 @@ public class Config {
 
     @Bean
     public Pizzas getHamMushrooms() {
-        Pizzas base = new Pizzas("prosciutto e funghi", 7.00, 700);
+        Pizzas base = new Pizzas("prosciutto e funghi", 7.00, 500);
         base.addTopping(getMozzarella());
         base.addTopping(getTomato());
         base.addTopping(getHam());
@@ -99,7 +94,6 @@ public class Config {
         newMenu.addtopping(getAnchovies());
         newMenu.addtopping(getMushrooms());
         newMenu.addtopping(getHam());
-        newMenu.addtopping(getAnanas());
         newMenu.addtopping(getSalame());
         return newMenu;
     }

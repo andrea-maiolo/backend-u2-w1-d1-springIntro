@@ -28,7 +28,7 @@ public class Pizzas {
         int toppingsCalories = listOfToppings.stream()
                 .map(t -> t.getCalories())
                 .reduce(0, (a, b) -> a + b);
-        this.calories += toppingsCalories;
+        this.calories = 500 + toppingsCalories;
     }
 
 
